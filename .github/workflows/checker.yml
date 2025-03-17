@@ -1,0 +1,20 @@
+name : Check sorts
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches: 
+      - master
+jobs:
+   checker:
+      runs-on: ubuntu-latest
+      steps:
+        - name: Sorting algorithms checker
+          run: |
+            apt-get cmake
+            mkdir build && cd build
+            cmake ..
+            cmake --build .
+            ./main
+            
