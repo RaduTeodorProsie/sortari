@@ -1,11 +1,10 @@
-#include <iostream>
 #include "sorts/sortari.h"
-#include <chrono>
-#include <cassert>
-#include <vector>
 #include <algorithm>
+#include <cassert>
+#include <chrono>
+#include <iostream>
+#include <vector>
 const std::string path = "../small_tests/";
-const std::string umi = "neko";
 
 int main() {
     std::ios::sync_with_stdio(false);
