@@ -10,7 +10,7 @@ on:
 jobs:
   checker:
     runs-on: ubuntu-latest
-    timeout-minutes: 1   
+    timeout-minutes: 10
 
     steps:
       - name: Checkout code
