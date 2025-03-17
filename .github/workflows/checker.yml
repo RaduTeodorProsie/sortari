@@ -11,6 +11,7 @@ jobs:
       runs-on: ubuntu-latest
       steps:
         - name: Sorting algorithms checker
+          timeout-minutes: 1
           run: |
             apt-get cmake
             mkdir build && cd build
