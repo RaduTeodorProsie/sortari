@@ -5,6 +5,7 @@
 #include <vector>
 #include <algorithm>
 const std::string path = "../small_tests/";
+const std::string umi = "neko";
 
 int main() {
     std::ios::sync_with_stdio(false);
