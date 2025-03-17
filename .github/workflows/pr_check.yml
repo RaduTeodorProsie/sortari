@@ -1,0 +1,19 @@
+name : Get Diff
+on:
+  pull_request:
+    branches: 
+      - master
+jobs:
+    get_diff:
+      runs-on: self-hosted
+      steps:
+        - name: Changed Files
+          uses: tj-actions/changed-files@v46.0.1
+        - name: List all changed files
+          env:
+            CHANGED: ${{ steps.changed-files.outputs.all_changed_and_modified_files}}
+            FORBIDDEN: ("main.cpp", 
+          run: |
+            if [ "$NR_CHANGED" != "$NR_ADDED" ]; then
+              echo "Faci ceva gresit, nr. de fisiere adaugate e diferit de nr de fisiere schimbate" 
+            
