@@ -21,5 +21,5 @@ jobs:
 
       - name: Run Clang-Format with Custom Config
         run: |
-          find . -name '*.cpp' -o -name '*.h' | xargs clang-format -i -style=file
-          git diff --exit-code
+          # Run clang-format in dry-run mode with --Werror, check all .cpp and .h files
+          find . -name '*.cpp' -o -name '*.h' | xargs clang-format --dry-run --Werror -style=file
