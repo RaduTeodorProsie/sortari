@@ -1,15 +1,14 @@
 #include "sortari.h"
-
-void radixsort(vector<int> &v) {
+void radixsort(std::vector<int>& v) {
     const int B = 8;
     const int BITS = 32;
-    vector<int> b(BITS, 0);
+    std::vector<int> b(BITS, 0);
 
     int m = 1, n = v.size(); b[0] = 1;
     for(int i = 1; i < 31 ; i++) b[i] = (b[i - 1] | (1 << i));
     for(int i = 0 ; (i + 1) * B <= BITS ; i++)
     {
-        vector<int> f[1 << B];
+        std::vector<int> f[1 << B];
         for(int j = 0 ; j < n ; j++)
         {
             m = (v[j] >> (i * B));
