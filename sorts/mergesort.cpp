@@ -1,6 +1,5 @@
 #include "sortari.h"
-
-void merge(std::vector<int> &v, int l, int mid, int r);
+#include <algorithm>
 
 void mergesort(std::vector<int> &v, int l, int r) {
   if (l == r)
@@ -11,7 +10,8 @@ void mergesort(std::vector<int> &v, int l, int r) {
   mergesort(v, l, mid);
   mergesort(v, mid + 1, r);
 
-  merge(v, l, mid, r);
+  std::merge(v.begin() + l, v.begin() + mid + 1, v.begin() + mid + 1,
+             v.begin() + r + 1, v.begin() + l);
 }
 
 void mergesort(std::vector<int> &v) { mergesort(v, 0, v.size() - 1); }

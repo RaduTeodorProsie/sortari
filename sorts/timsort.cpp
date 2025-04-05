@@ -1,4 +1,5 @@
 #include "sortari.h"
+#include <algorithm>
 
 int calculate_minrun(int size) {
   int r = 0;
@@ -8,8 +9,6 @@ int calculate_minrun(int size) {
   }
   return size + r;
 }
-
-void merge(std::vector<int> &v, int l, int mid, int r);
 
 void insertion_sort(std::vector<int> &v, int l, int r) {
   for (int i = l + 1; i <= r; i++) {
@@ -36,7 +35,8 @@ void timsort(std::vector<int> &v) {
       int r = std::min(size - 1, i + 2 * bucket - 1);
 
       if (mid < r)
-        merge(v, i, mid, r);
+        std::merge(v.begin() + i, v.begin() + mid + 1, v.begin() + mid + 1,
+                   v.begin() + r + 1, v.begin() + i);
     }
   }
 }

@@ -12,5 +12,3 @@ void mergesort(std::vector<int> &v);
 void heapsort(std::vector<int> &v);
 
 void timsort(std::vector<int> &v);
-
-void merge(std::vector<int> &v, int l, int mid, int r);
