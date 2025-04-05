@@ -63,40 +63,43 @@ int main() {
 
     cop = v;
     start = std::chrono::high_resolution_clock::now();
-    std::cout << "shellsort: "; 
+    std::cout << "shellsort: ";
     shellsort(cop);
     end = std::chrono::high_resolution_clock::now();
-    elapsed = std::chrono::duration_cast<std::chrono::milliseconds>(end -
-    start); std::cout << elapsed.count() << " milliseconds\n";
+    elapsed =
+        std::chrono::duration_cast<std::chrono::milliseconds>(end - start);
+    std::cout << elapsed.count() << " milliseconds\n";
     assert(is_sorted(cop.begin(), cop.end()));
 
     cop = v;
     start = std::chrono::high_resolution_clock::now();
-    std::cout << "heapsort: "; 
+    std::cout << "heapsort: ";
     heapsort(cop);
     end = std::chrono::high_resolution_clock::now();
-    elapsed = std::chrono::duration_cast<std::chrono::milliseconds>(end -
-    start); std::cout << elapsed.count() << " milliseconds\n";
+    elapsed =
+        std::chrono::duration_cast<std::chrono::milliseconds>(end - start);
+    std::cout << elapsed.count() << " milliseconds\n";
     assert(is_sorted(cop.begin(), cop.end()));
 
     cop = v;
     start = std::chrono::high_resolution_clock::now();
-    std::cout << "mergesort: "; 
+    std::cout << "mergesort: ";
     mergesort(cop);
     end = std::chrono::high_resolution_clock::now();
-    elapsed = std::chrono::duration_cast<std::chrono::milliseconds>(end -
-    start); std::cout << elapsed.count() << " milliseconds\n";
+    elapsed =
+        std::chrono::duration_cast<std::chrono::milliseconds>(end - start);
+    std::cout << elapsed.count() << " milliseconds\n";
     assert(is_sorted(cop.begin(), cop.end()));
 
     cop = v;
     start = std::chrono::high_resolution_clock::now();
-    std::cout << "timsort: "; 
+    std::cout << "timsort: ";
     timsort(cop);
     end = std::chrono::high_resolution_clock::now();
-    elapsed = std::chrono::duration_cast<std::chrono::milliseconds>(end -
-    start); std::cout << elapsed.count() << " milliseconds\n";
+    elapsed =
+        std::chrono::duration_cast<std::chrono::milliseconds>(end - start);
+    std::cout << elapsed.count() << " milliseconds\n";
     assert(is_sorted(cop.begin(), cop.end()));
-
 
     std::cout << '\n';
   }
