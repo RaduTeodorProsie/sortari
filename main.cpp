@@ -4,7 +4,7 @@
 #include <chrono>
 #include <iostream>
 #include <vector>
-const std::string path = "../small_tests/";
+const std::string path = "../big_tests/";
 
 int main() {
   std::ios::sync_with_stdio(false);
@@ -13,7 +13,7 @@ int main() {
 
   int n;
   std::vector<int> v, cop;
-  for (int i = 0; i <= 10; i++) {
+  for (int i = 1; i <= 5; i++) {
     const std::string to_open = path + std::to_string(i) + "-sortare.in";
     freopen(to_open.c_str(), "r", stdin);
 
