@@ -18,7 +18,7 @@ jobs:
 
       - name: Build and run tests
         run: |
-          set -e
+          sudo apt install -y libtbb-dev
           mkdir build && cd build
           cmake ..
           cmake --build .
