@@ -111,6 +111,6 @@ int main() {
     std::cout << elapsed.count() << " milliseconds\n";
     assert(is_sorted(cop.begin(), cop.end()));
 
-    std::cout << '\n';
+    std::cout << '\n' << '\n';
   }
 }
