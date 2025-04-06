@@ -29,18 +29,6 @@ int main() {
     auto elapsed =
         std::chrono::duration_cast<std::chrono::milliseconds>(end - start);
 
-    /*FORMAT:
-
-    cop = v;
-    start = std::chrono::high_resolution_clock::now();
-    std::cout << "NUME_SORTARE: "; NUME_SORTARE(cop);
-    end = std::chrono::high_resolution_clock::now();
-    elapsed = std::chrono::duration_cast<std::chrono::milliseconds>(end -
-    start); std::cout << elapsed.count() << " milliseconds\n";
-    assert(is_sorted(cop.begin(), cop.end()));
-
-    */
-
     cop = v;
     start = std::chrono::high_resolution_clock::now();
     std::cout << "radixsort: ";
@@ -110,6 +98,20 @@ int main() {
         std::chrono::duration_cast<std::chrono::milliseconds>(end - start);
     std::cout << elapsed.count() << " milliseconds\n";
     assert(is_sorted(cop.begin(), cop.end()));
+
+    cop = v;
+    start = std::chrono::high_resolution_clock::now();
+    std::cout << "counting_sort: ";
+    counting_sort(cop);
+    end = std::chrono::high_resolution_clock::now();
+    elapsed =
+        std::chrono::duration_cast<std::chrono::milliseconds>(end - start);
+    if (is_sorted(cop.begin(), cop.end())) {
+      std::cout << elapsed.count() << " milliseconds\n";
+    }
+
+    else
+      std::cout << "nu poate sorta\n";
 
     std::cout << '\n' << '\n';
   }

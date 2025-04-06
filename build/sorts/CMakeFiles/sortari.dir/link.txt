@@ -1,0 +1,2 @@
+/usr/bin/ar qc libsortari.a CMakeFiles/sortari.dir/counting_sort.cpp.o CMakeFiles/sortari.dir/heapsort.cpp.o CMakeFiles/sortari.dir/mergesort.cpp.o CMakeFiles/sortari.dir/parallel_sort.cpp.o CMakeFiles/sortari.dir/radixsort.cpp.o CMakeFiles/sortari.dir/shellsort.cpp.o CMakeFiles/sortari.dir/stl_sort.cpp.o CMakeFiles/sortari.dir/timsort.cpp.o
+/usr/bin/ranlib libsortari.a
