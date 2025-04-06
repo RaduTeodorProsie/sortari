@@ -1,0 +1,5 @@
+Testul 1 : 1e8 numere, random.
+Testul 2 : 1e7 numere <= 1e6, aproape sortate.
+Testul 3 : 1e7 numere <= 1e6, in ordine descrescatoare.
+Testul 4 : 1e7 numere, sortate.
+Testul 5 : 1e7 de 1.
