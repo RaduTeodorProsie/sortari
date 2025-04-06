@@ -1,8 +1,8 @@
 name: Check sorts
 on:
- # push:
-  #  branches:
-   #   - main
+  push:
+   branches:
+     - main
   pull_request:
     branches: 
       - main
@@ -11,7 +11,7 @@ on:
 jobs:
   checker:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 20
 
     steps:
       - name: Checkout code
@@ -20,7 +20,4 @@ jobs:
       - name: Build and run tests
         run: |
           sudo apt install -y libtbb-dev
-          mkdir build && cd build
-          cmake ..
-          cmake --build .
-          ./main
+          chmod +x run.sh && ./run.sh
