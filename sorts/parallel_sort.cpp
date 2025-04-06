@@ -1,8 +1,8 @@
 #include "sortari.h"
 #include <algorithm>
-#include <vector>
 #include <execution>
+#include <vector>
 
-void parallel_sort(std::vector<int> &v){
-    std::sort(std::execution::par, v.begin(), v.end()); 
+void parallel_sort(std::vector<int> &v) {
+  std::sort(std::execution::par, v.begin(), v.end());
 }

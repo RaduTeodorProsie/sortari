@@ -100,7 +100,7 @@ int main() {
         std::chrono::duration_cast<std::chrono::milliseconds>(end - start);
     std::cout << elapsed.count() << " milliseconds\n";
     assert(is_sorted(cop.begin(), cop.end()));
- 
+
     cop = v;
     start = std::chrono::high_resolution_clock::now();
     std::cout << "parallel sort: ";
@@ -110,7 +110,7 @@ int main() {
         std::chrono::duration_cast<std::chrono::milliseconds>(end - start);
     std::cout << elapsed.count() << " milliseconds\n";
     assert(is_sorted(cop.begin(), cop.end()));
-    
+
     std::cout << '\n';
   }
 }
