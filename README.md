@@ -2,7 +2,7 @@
 1. **Test 1**: 100 million numbers, random.
 2. **Test 2**: 10 million numbers ≤ 1 million, nearly sorted.
 3. **Test 3**: 10 million numbers ≤ 1 million, in descending order.
-4. **Test 4**: 10 million numbers, sorted.
+4. **Test 4**: The numbers from 1 to 10 million, in order.
 5. **Test 5**: 10 million of the number 1.
 
 
