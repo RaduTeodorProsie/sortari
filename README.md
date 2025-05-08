@@ -64,7 +64,7 @@ Here's why each algorithm excelled or struggled in specific tests, based on thei
 - **TEST 1/4 Strength**:  
   Detected natural runs in random/sorted data (TEST 4: 1.35s vs. Merge Sort's 2.61s).  
 - **TEST 3 Limitation (2.07s)**:  
-  Reverse-sorted data forced the worst case for the selection sort fallback, reducing optimization benefits.
+  Reverse-sorted data forced the worst case for the insertion sort fallback, reducing optimization benefits.
 
 ---
 
