@@ -1,4 +1,4 @@
-# This is a repo meant to benchmark different sorting algorithms on different tests and hardware. 
+# This is a repo meant to benchmark different sorting algorithms on different tests. 
 1. **Test 1**: 100 million numbers, random.
 2. **Test 2**: 10 million numbers ≤ 1 million, nearly sorted.
 3. **Test 3**: 10 million numbers ≤ 1 million, in descending order.
